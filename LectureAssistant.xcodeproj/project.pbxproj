@@ -7,19 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		67D9B4FA28DBDE22000DE0B3 /* LectureAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B4F928DBDE22000DE0B3 /* LectureAssistantApp.swift */; };
-		67D9B4FC28DBDE22000DE0B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B4FB28DBDE22000DE0B3 /* ContentView.swift */; };
+		6762847828DFF5BA000C073A /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 6762847728DFF5BA000C073A /* KeyboardShortcuts */; };
+		6762847A28DFF5CE000C073A /* KeyboardShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6762847928DFF5CE000C073A /* KeyboardShortcuts.swift */; };
+		67CCF14628DFBF70008BB224 /* AppleScriptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CCF14528DFBF70008BB224 /* AppleScriptService.swift */; };
+		67CCF14928DFC5AE008BB224 /* AppleScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CCF14828DFC5AE008BB224 /* AppleScript.swift */; };
 		67D9B4FE28DBDE25000DE0B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D9B4FD28DBDE25000DE0B3 /* Assets.xcassets */; };
 		67D9B50128DBDE25000DE0B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D9B50028DBDE25000DE0B3 /* Preview Assets.xcassets */; };
+		67D9B50928DBE152000DE0B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B50828DBE152000DE0B3 /* AppDelegate.swift */; };
+		67D9B50C28DCA9FA000DE0B3 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B50B28DCA9FA000DE0B3 /* String.swift */; };
+		67D9B50E28DCAA6E000DE0B3 /* ScenarioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B50D28DCAA6E000DE0B3 /* ScenarioManager.swift */; };
+		67D9B51028DCAD09000DE0B3 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B50F28DCAD09000DE0B3 /* NSImage.swift */; };
+		67D9B51228DCAF86000DE0B3 /* Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B51128DCAF86000DE0B3 /* Scenario.swift */; };
+		67D9B51428DD122E000DE0B3 /* NSOpenPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B51328DD122E000DE0B3 /* NSOpenPanel.swift */; };
+		67D9B51628DD14E8000DE0B3 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B51528DD14E8000DE0B3 /* JSONDecoder.swift */; };
+		67D9B51828DD153E000DE0B3 /* StepAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B51728DD153E000DE0B3 /* StepAction.swift */; };
+		67D9B51C28DDE766000DE0B3 /* HintManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B51B28DDE766000DE0B3 /* HintManager.swift */; };
+		67D9B52128DDF6FF000DE0B3 /* HintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B52028DDF6FF000DE0B3 /* HintViewController.swift */; };
+		67D9B52328DDF851000DE0B3 /* Hint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D9B52228DDF851000DE0B3 /* Hint.storyboard */; };
+		67D9B52528DDF984000DE0B3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B52428DDF984000DE0B3 /* Coordinator.swift */; };
+		67D9B52828DE069C000DE0B3 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B52728DE069C000DE0B3 /* Closures.swift */; };
+		67D9B52A28DE0B6D000DE0B3 /* ActionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B52928DE0B6D000DE0B3 /* ActionsManager.swift */; };
+		67D9B52D28DE0CBB000DE0B3 /* BashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B52C28DE0CBB000DE0B3 /* BashService.swift */; };
+		67D9B53028DE1CC7000DE0B3 /* ActionsEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B52F28DE1CC7000DE0B3 /* ActionsEnvironment.swift */; };
+		67D9B53228DE6039000DE0B3 /* SplashMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B53128DE6039000DE0B3 /* SplashMessageManager.swift */; };
+		67D9B53428DE609A000DE0B3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B53328DE609A000DE0B3 /* SplashViewController.swift */; };
+		67D9B53628DE6128000DE0B3 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D9B53528DE6128000DE0B3 /* Splash.storyboard */; };
+		67D9B53828DE635B000DE0B3 /* WindowPresentingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B53728DE635B000DE0B3 /* WindowPresentingManager.swift */; };
+		67D9B53A28DE63F6000DE0B3 /* NibInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B53928DE63F6000DE0B3 /* NibInstantiable.swift */; };
+		67D9B53C28DE8004000DE0B3 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9B53B28DE8004000DE0B3 /* CGRect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6762847928DFF5CE000C073A /* KeyboardShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcuts.swift; sourceTree = "<group>"; };
+		67CCF14528DFBF70008BB224 /* AppleScriptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScriptService.swift; sourceTree = "<group>"; };
+		67CCF14828DFC5AE008BB224 /* AppleScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScript.swift; sourceTree = "<group>"; };
 		67D9B4F628DBDE22000DE0B3 /* LectureAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LectureAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		67D9B4F928DBDE22000DE0B3 /* LectureAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureAssistantApp.swift; sourceTree = "<group>"; };
-		67D9B4FB28DBDE22000DE0B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		67D9B4FD28DBDE25000DE0B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67D9B50028DBDE25000DE0B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		67D9B50228DBDE25000DE0B3 /* LectureAssistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LectureAssistant.entitlements; sourceTree = "<group>"; };
+		67D9B50828DBE152000DE0B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67D9B50B28DCA9FA000DE0B3 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		67D9B50D28DCAA6E000DE0B3 /* ScenarioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioManager.swift; sourceTree = "<group>"; };
+		67D9B50F28DCAD09000DE0B3 /* NSImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImage.swift; sourceTree = "<group>"; };
+		67D9B51128DCAF86000DE0B3 /* Scenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenario.swift; sourceTree = "<group>"; };
+		67D9B51328DD122E000DE0B3 /* NSOpenPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOpenPanel.swift; sourceTree = "<group>"; };
+		67D9B51528DD14E8000DE0B3 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		67D9B51728DD153E000DE0B3 /* StepAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepAction.swift; sourceTree = "<group>"; };
+		67D9B51B28DDE766000DE0B3 /* HintManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintManager.swift; sourceTree = "<group>"; };
+		67D9B51E28DDF252000DE0B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		67D9B52028DDF6FF000DE0B3 /* HintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintViewController.swift; sourceTree = "<group>"; };
+		67D9B52228DDF851000DE0B3 /* Hint.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hint.storyboard; sourceTree = "<group>"; };
+		67D9B52428DDF984000DE0B3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		67D9B52728DE069C000DE0B3 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		67D9B52928DE0B6D000DE0B3 /* ActionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsManager.swift; sourceTree = "<group>"; };
+		67D9B52C28DE0CBB000DE0B3 /* BashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BashService.swift; sourceTree = "<group>"; };
+		67D9B52E28DE16D3000DE0B3 /* LectureAssistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LectureAssistant.entitlements; sourceTree = "<group>"; };
+		67D9B52F28DE1CC7000DE0B3 /* ActionsEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsEnvironment.swift; sourceTree = "<group>"; };
+		67D9B53128DE6039000DE0B3 /* SplashMessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashMessageManager.swift; sourceTree = "<group>"; };
+		67D9B53328DE609A000DE0B3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		67D9B53528DE6128000DE0B3 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		67D9B53728DE635B000DE0B3 /* WindowPresentingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowPresentingManager.swift; sourceTree = "<group>"; };
+		67D9B53928DE63F6000DE0B3 /* NibInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInstantiable.swift; sourceTree = "<group>"; };
+		67D9B53B28DE8004000DE0B3 /* CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,12 +75,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6762847828DFF5BA000C073A /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67CCF14728DFC593008BB224 /* Scripting */ = {
+			isa = PBXGroup;
+			children = (
+				67D9B52C28DE0CBB000DE0B3 /* BashService.swift */,
+				67CCF14528DFBF70008BB224 /* AppleScriptService.swift */,
+				67CCF14828DFC5AE008BB224 /* AppleScript.swift */,
+			);
+			path = Scripting;
+			sourceTree = "<group>";
+		};
 		67D9B4ED28DBDE22000DE0B3 = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +111,16 @@
 		67D9B4F828DBDE22000DE0B3 /* LectureAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				67D9B4F928DBDE22000DE0B3 /* LectureAssistantApp.swift */,
-				67D9B4FB28DBDE22000DE0B3 /* ContentView.swift */,
+				67D9B52628DE0680000DE0B3 /* Utils */,
+				67D9B51F28DDF6EB000DE0B3 /* ViewControllers */,
+				67D9B51A28DDE750000DE0B3 /* Service */,
+				67D9B51928DDE745000DE0B3 /* Models */,
+				67D9B50A28DCA9F0000DE0B3 /* Extensions */,
+				67D9B50828DBE152000DE0B3 /* AppDelegate.swift */,
+				67D9B52428DDF984000DE0B3 /* Coordinator.swift */,
 				67D9B4FD28DBDE25000DE0B3 /* Assets.xcassets */,
-				67D9B50228DBDE25000DE0B3 /* LectureAssistant.entitlements */,
+				67D9B52E28DE16D3000DE0B3 /* LectureAssistant.entitlements */,
+				67D9B51E28DDF252000DE0B3 /* Info.plist */,
 				67D9B4FF28DBDE25000DE0B3 /* Preview Content */,
 			);
 			path = LectureAssistant;
@@ -67,6 +132,62 @@
 				67D9B50028DBDE25000DE0B3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67D9B50A28DCA9F0000DE0B3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67D9B50B28DCA9FA000DE0B3 /* String.swift */,
+				67D9B50F28DCAD09000DE0B3 /* NSImage.swift */,
+				67D9B51328DD122E000DE0B3 /* NSOpenPanel.swift */,
+				67D9B51528DD14E8000DE0B3 /* JSONDecoder.swift */,
+				67D9B53B28DE8004000DE0B3 /* CGRect.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		67D9B51928DDE745000DE0B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67D9B51728DD153E000DE0B3 /* StepAction.swift */,
+				67D9B51128DCAF86000DE0B3 /* Scenario.swift */,
+				67D9B52F28DE1CC7000DE0B3 /* ActionsEnvironment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67D9B51A28DDE750000DE0B3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				67CCF14728DFC593008BB224 /* Scripting */,
+				67D9B53728DE635B000DE0B3 /* WindowPresentingManager.swift */,
+				67D9B51B28DDE766000DE0B3 /* HintManager.swift */,
+				67D9B53128DE6039000DE0B3 /* SplashMessageManager.swift */,
+				67D9B50D28DCAA6E000DE0B3 /* ScenarioManager.swift */,
+				67D9B52928DE0B6D000DE0B3 /* ActionsManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		67D9B51F28DDF6EB000DE0B3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				67D9B52028DDF6FF000DE0B3 /* HintViewController.swift */,
+				67D9B52228DDF851000DE0B3 /* Hint.storyboard */,
+				67D9B53328DE609A000DE0B3 /* SplashViewController.swift */,
+				67D9B53528DE6128000DE0B3 /* Splash.storyboard */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		67D9B52628DE0680000DE0B3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				67D9B52728DE069C000DE0B3 /* Closures.swift */,
+				67D9B53928DE63F6000DE0B3 /* NibInstantiable.swift */,
+				6762847928DFF5CE000C073A /* KeyboardShortcuts.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +206,9 @@
 			dependencies = (
 			);
 			name = LectureAssistant;
+			packageProductDependencies = (
+				6762847728DFF5BA000C073A /* KeyboardShortcuts */,
+			);
 			productName = LectureAssistant;
 			productReference = 67D9B4F628DBDE22000DE0B3 /* LectureAssistant.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 67D9B4ED28DBDE22000DE0B3;
+			packageReferences = (
+				6762847628DFF5BA000C073A /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
 			productRefGroup = 67D9B4F728DBDE22000DE0B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,7 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67D9B50128DBDE25000DE0B3 /* Preview Assets.xcassets in Resources */,
+				67D9B52328DDF851000DE0B3 /* Hint.storyboard in Resources */,
 				67D9B4FE28DBDE25000DE0B3 /* Assets.xcassets in Resources */,
+				67D9B53628DE6128000DE0B3 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +268,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67D9B4FC28DBDE22000DE0B3 /* ContentView.swift in Sources */,
-				67D9B4FA28DBDE22000DE0B3 /* LectureAssistantApp.swift in Sources */,
+				67D9B53228DE6039000DE0B3 /* SplashMessageManager.swift in Sources */,
+				67D9B50E28DCAA6E000DE0B3 /* ScenarioManager.swift in Sources */,
+				67D9B52D28DE0CBB000DE0B3 /* BashService.swift in Sources */,
+				67CCF14628DFBF70008BB224 /* AppleScriptService.swift in Sources */,
+				67D9B53428DE609A000DE0B3 /* SplashViewController.swift in Sources */,
+				67D9B52A28DE0B6D000DE0B3 /* ActionsManager.swift in Sources */,
+				67D9B51828DD153E000DE0B3 /* StepAction.swift in Sources */,
+				67D9B53A28DE63F6000DE0B3 /* NibInstantiable.swift in Sources */,
+				67D9B53C28DE8004000DE0B3 /* CGRect.swift in Sources */,
+				67CCF14928DFC5AE008BB224 /* AppleScript.swift in Sources */,
+				67D9B53828DE635B000DE0B3 /* WindowPresentingManager.swift in Sources */,
+				67D9B50928DBE152000DE0B3 /* AppDelegate.swift in Sources */,
+				6762847A28DFF5CE000C073A /* KeyboardShortcuts.swift in Sources */,
+				67D9B51628DD14E8000DE0B3 /* JSONDecoder.swift in Sources */,
+				67D9B51C28DDE766000DE0B3 /* HintManager.swift in Sources */,
+				67D9B52828DE069C000DE0B3 /* Closures.swift in Sources */,
+				67D9B53028DE1CC7000DE0B3 /* ActionsEnvironment.swift in Sources */,
+				67D9B50C28DCA9FA000DE0B3 /* String.swift in Sources */,
+				67D9B52528DDF984000DE0B3 /* Coordinator.swift in Sources */,
+				67D9B51028DCAD09000DE0B3 /* NSImage.swift in Sources */,
+				67D9B52128DDF6FF000DE0B3 /* HintViewController.swift in Sources */,
+				67D9B51228DCAF86000DE0B3 /* Scenario.swift in Sources */,
+				67D9B51428DD122E000DE0B3 /* NSOpenPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +424,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LectureAssistant/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +452,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LectureAssistant/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +488,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6762847628DFF5BA000C073A /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6762847728DFF5BA000C073A /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6762847628DFF5BA000C073A /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67D9B4EE28DBDE22000DE0B3 /* Project object */;
 }

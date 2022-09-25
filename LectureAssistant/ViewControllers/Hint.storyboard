@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21208.1" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="bU7-R8-ocO">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21208.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hint View Controller-->
+        <scene sceneID="PEd-7d-5j0">
+            <objects>
+                <viewController id="bU7-R8-ocO" customClass="HintViewController" customModule="LectureAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="tOy-S4-hL0">
+                        <rect key="frame" x="0.0" y="0.0" width="618" height="48"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9f-1a-V0E">
+                                <rect key="frame" x="16" y="16" width="586" height="16"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" allowsUndo="NO" sendsActionOnEndEditing="YES" title="Demo hint" drawsBackground="YES" id="0BU-ln-1tA">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="I9f-1a-V0E" secondAttribute="bottom" constant="8" id="5AK-kD-4RJ"/>
+                            <constraint firstItem="I9f-1a-V0E" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tOy-S4-hL0" secondAttribute="top" constant="8" id="CV3-WM-PFu"/>
+                            <constraint firstAttribute="trailing" secondItem="I9f-1a-V0E" secondAttribute="trailing" constant="16" id="Qk8-nl-q1z"/>
+                            <constraint firstItem="I9f-1a-V0E" firstAttribute="centerY" secondItem="tOy-S4-hL0" secondAttribute="centerY" id="Y84-5k-KIF"/>
+                            <constraint firstItem="I9f-1a-V0E" firstAttribute="leading" secondItem="tOy-S4-hL0" secondAttribute="leading" constant="16" id="tez-Dk-xGQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hintField" destination="I9f-1a-V0E" id="xCw-so-94R"/>
+                        <outlet property="panel" destination="tOy-S4-hL0" id="6aX-Nd-I1T"/>
+                    </connections>
+                </viewController>
+                <customObject id="9uD-mB-xHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="131"/>
+        </scene>
+    </scenes>
+</document>

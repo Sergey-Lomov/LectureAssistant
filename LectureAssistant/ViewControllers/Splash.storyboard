@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21208.1" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="bU7-R8-ocO">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21208.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="PEd-7d-5j0">
+            <objects>
+                <viewController id="bU7-R8-ocO" customClass="SplashViewController" customModule="LectureAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="tOy-S4-hL0">
+                        <rect key="frame" x="0.0" y="0.0" width="720" height="349"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="EWW-Jx-Qw2">
+                                <rect key="frame" x="236" y="100" width="248" height="149"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JqS-PS-tYF">
+                                        <rect key="frame" x="30" y="32" width="188" height="85"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="E8P-Qg-gex">
+                                            <font key="font" metaFont="systemBold" size="72"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JqS-PS-tYF" firstAttribute="leading" secondItem="EWW-Jx-Qw2" secondAttribute="leading" constant="32" id="8tP-DB-QUS"/>
+                                    <constraint firstAttribute="trailing" secondItem="JqS-PS-tYF" secondAttribute="trailing" constant="32" id="KpL-ki-6tg"/>
+                                    <constraint firstAttribute="bottom" secondItem="JqS-PS-tYF" secondAttribute="bottom" constant="32" id="icR-Br-7xY"/>
+                                    <constraint firstItem="JqS-PS-tYF" firstAttribute="top" secondItem="EWW-Jx-Qw2" secondAttribute="top" constant="32" id="mYc-28-VVQ"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EWW-Jx-Qw2" secondAttribute="trailing" constant="100" id="IuZ-h1-neo"/>
+                            <constraint firstItem="EWW-Jx-Qw2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tOy-S4-hL0" secondAttribute="leading" constant="100" id="Iyp-Gu-zQd"/>
+                            <constraint firstItem="EWW-Jx-Qw2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tOy-S4-hL0" secondAttribute="top" constant="100" id="Md8-lS-hOG"/>
+                            <constraint firstItem="EWW-Jx-Qw2" firstAttribute="centerX" secondItem="tOy-S4-hL0" secondAttribute="centerX" id="PCQ-ul-kZ5"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EWW-Jx-Qw2" secondAttribute="bottom" constant="100" id="aEH-h2-SWA"/>
+                            <constraint firstItem="EWW-Jx-Qw2" firstAttribute="centerY" secondItem="tOy-S4-hL0" secondAttribute="centerY" id="tSP-rd-o2e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageField" destination="JqS-PS-tYF" id="tCG-pi-pg2"/>
+                        <outlet property="panel" destination="EWW-Jx-Qw2" id="tqs-AK-TOF"/>
+                    </connections>
+                </viewController>
+                <customObject id="9uD-mB-xHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="317"/>
+        </scene>
+    </scenes>
+</document>
