@@ -30,4 +30,13 @@ class AppleScript {
     static func activateApp(_ app: String) -> AppleScript {
         .init("activate application \"\(app)\"")
     }
+
+    static func showNextPreview() -> AppleScript {
+        .init("""
+        activate application "Preview"
+        tell application "System Events"
+            key code 30 using {shift down, command down}
+        end tell
+        """)
+    }
 }

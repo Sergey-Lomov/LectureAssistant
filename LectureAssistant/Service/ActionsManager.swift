@@ -22,6 +22,8 @@ class ActionsManager {
             showXCodeSymbol(name)
         case .activateApp(let name):
             activateApp(name)
+        case .showNextPreview:
+            showNextPreview()
         }
     }
 
@@ -32,7 +34,7 @@ class ActionsManager {
         }
 
         let repoPath = repos[repoIndex]
-        BashService.execute(command: "git", dir: repoPath, with: ["checkout", id]) { [weak self] success, output in
+        BashService.execute(command: "git", dir: repoPath, with: ["checkout", id, "-f"]) { [weak self] success, output in
             guard !success else { return }
             let message = "Fail to switch to commit \(id) in repo '\(repoPath)'. Details: \(output)"
             self?.onProblemReport?(message)
@@ -51,6 +53,14 @@ class ActionsManager {
         AppleScriptService.execute(.activateApp(name)) { [weak self] success, output in
             guard !success else { return }
             let message = "Fail to activate app \(name). Details: \(output)"
+            self?.onProblemReport?(message)
+        }
+    }
+
+    private func showNextPreview() {
+        AppleScriptService.execute(.showNextPreview()) { [weak self] success, output in
+            guard !success else { return }
+            let message = "Fail to show next preview. Details: \(output)"
             self?.onProblemReport?(message)
         }
     }

@@ -15,6 +15,7 @@ enum StepAction {
     case moveToCommit(id: String, repo: Int)
     case showXCodeSymbol(name: String)
     case activateApp(name: String)
+    case showNextPreview
 }
 
 struct EncodedStepActions: Decodable {
@@ -22,6 +23,7 @@ struct EncodedStepActions: Decodable {
     let moveToCommit: MoveToCommitParams?
     let showXCodeSymbol: String?
     let activateApp: String?
+    let showNextPreview: Bool?
 
     func toActions() -> [StepAction] {
         var actions = [StepAction]()
@@ -36,6 +38,10 @@ struct EncodedStepActions: Decodable {
 
         if let app = activateApp {
             actions.append(.activateApp(name: app))
+        }
+
+        if showNextPreview ?? false {
+            actions.append(.showNextPreview)
         }
 
         return actions
