@@ -39,12 +39,4 @@ final class SplashMessageManager: WindowPresentingManager<SplashViewController> 
                 }
         }
     }
-
-//    func setVisibility(_ visibility: Bool) {
-//        if visibility {
-//            hintWindow?.makeKeyAndOrderFront(NSApp)
-//        } else {
-//            hintWindow?.orderOut(self)
-//        }
-//    }
 }

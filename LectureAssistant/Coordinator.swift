@@ -12,12 +12,14 @@ class Coordinator {
 
     private let hint = HintManager()
     private let splash = SplashMessageManager()
+    private let instructions = InstructionsManager()
     private let scenario = ScenarioManager()
     private let actions = ActionsManager()
 
     func start() {
         hint.setup()
         splash.setup()
+        instructions.setup()
 
         scenario.onHintVisibilitySet = { [weak self] visibility in
             self?.hint.setVisibility(visibility)
@@ -34,11 +36,21 @@ class Coordinator {
         scenario.onActionExecute = { [weak self] action in
             self?.actions.execute(action)
         }
+        scenario.onInstructionsShow = { [weak self] strings in
+            self?.instructions.showInstructions(strings)
+            let testHint = "Test hint for panel positioning and resizing".localized
+            self?.hint.setHint(testHint)
+            self?.hint.setVisibility(true)
+        }
 
         actions.onProblemReport = { [weak self] message in
             DispatchQueue.main.async {
                 self?.showActionFailAlert(message)
             }
+        }
+
+        instructions.onDone = { [weak self] in
+            self?.scenario.nextStep()
         }
     }
 

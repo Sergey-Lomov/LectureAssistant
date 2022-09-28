@@ -11,16 +11,15 @@ class HintViewController: NSViewController, NibInstantiable {
 
     static var nibName: String { "Hint" }
 
-    @IBOutlet private var panel: NSView?
-    @IBOutlet private var hintField: NSTextField?
+    @IBOutlet private var panel: NSView!
+    @IBOutlet private var hintField: NSTextField!
 
     override func viewDidLoad() {
-        panel?.wantsLayer = true
-        panel?.layer?.cornerRadius = 10
-        panel?.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
+        super.viewDidLoad()
+        panel.applyInfoPanelStyle()
     }
 
     func setHint(_ hint: String) {
-        hintField?.stringValue = hint
+        hintField.stringValue = hint
     }
 }

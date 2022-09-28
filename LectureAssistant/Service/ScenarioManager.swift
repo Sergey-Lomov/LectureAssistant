@@ -23,10 +23,15 @@ class ScenarioManager {
     var onHintVisibilitySet: BoolHandler?
     var onEnvironmentSet: Handler<ActionsEnvironment?>?
     var onActionExecute: Handler<StepAction>?
+    var onInstructionsShow: Handler<[String]>?
 
     func nextStep() {
-        guard let current = currentStep, let scenario = scenario else { return }
-        currentStep = min(current + 1, scenario.steps.count - 1)
+        guard let scenario = scenario else { return }
+        if let current = currentStep {
+            currentStep = min(current + 1, scenario.steps.count - 1)
+        } else {
+            currentStep = 0
+        }
     }
 
     func previousStep() {
@@ -36,14 +41,20 @@ class ScenarioManager {
 
     func restart() {
         guard scenario != nil else { return }
-        currentStep = 0
+
+        onEnvironmentSet?(scenario?.env)
+        if let instructions = scenario?.instructions {
+            onInstructionsShow?(instructions)
+            currentStep = nil
+        } else {
+            currentStep = 0
+        }
     }
 
     func loadScenario(_ url: URL) {
         do {
             let data = try Data(contentsOf: url)
             scenario = try JSONDecoder.snakeCaseDecoder.decode(Scenario.self, from: data)
-            onEnvironmentSet?(scenario?.env)
             restart()
         } catch {
             print(error)

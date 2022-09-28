@@ -33,5 +33,6 @@ struct ScenarioStep: Decodable {
 struct Scenario: Decodable {
     let title: String
     let steps: [ScenarioStep]
+    let instructions: [String]?
     let env: ActionsEnvironment?
 }
